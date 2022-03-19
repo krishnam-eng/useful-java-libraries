@@ -1,4 +1,4 @@
-package edu.clap.libraries.java.java8;
+package edu.clap.libraries.jnative.function;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
  * - f(g(x)) Composing Comparators -thenComparing
  */
 public class KeyConcepts {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
     keyWordsDemo();
     passingBehaviourDemo();
     composingComparators();
@@ -60,29 +60,29 @@ public class KeyConcepts {
   }
 
   private static void keyWordsDemo() {
-        List<String> strings = Arrays.asList("a", "b");
+    List<String> strings = Arrays.asList("a", "b");
 
-        // Lambda Expressions
+    // Lambda Expressions
 
-        // "capturing lambda"
-        // Functional Interface
-        // Function Descriptor
-        Comparator<String> stringComparator = (String a, String b) -> a.compareTo(b);
+    // "capturing lambda"
+    // Functional Interface
+    // Function Descriptor
+    Comparator<String> stringComparator = (String a, String b) -> a.compareTo(b);
 
-        // "type inference"
-        Predicate<String> isNotEmpty = a -> !a.isEmpty();
+    // "type inference"
+    Predicate<String> isNotEmpty = a -> !a.isEmpty();
 
-        // Behavior parameterization
-        strings.stream().filter(isNotEmpty).collect(Collectors.toList());
+    // Behavior parameterization
+    strings.stream().filter(isNotEmpty).collect(Collectors.toList());
 
-        // Method References
-        strings.stream().filter(String::isEmpty).collect(Collectors.toList());
+    // Method References
+    strings.stream().filter(String::isEmpty).collect(Collectors.toList());
 
-        // Composing Predicate
-        Predicate<String> containsHi = a -> a.contains("hi");
-        Predicate<String> containsHey = a -> a.contains("hey");
-        isNotEmpty.and(containsHi).or(containsHey);
-    }
+    // Composing Predicate
+    Predicate<String> containsHi = a -> a.contains("hi");
+    Predicate<String> containsHey = a -> a.contains("hey");
+    isNotEmpty.and(containsHi).or(containsHey);
+  }
 
   private static void passingBehaviourDemo() {
 

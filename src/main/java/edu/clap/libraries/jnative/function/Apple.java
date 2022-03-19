@@ -1,4 +1,4 @@
-package edu.clap.libraries.java.java8;
+package edu.clap.libraries.jnative.function;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
