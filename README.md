@@ -1,12 +1,6 @@
 # useful-java-libraries
 
-Daily katas using popular and widely used Java libraries (both native & third-party) which are being used to remove the boilerplate code or saves time and effort.
-
-A kata, or code kata, is defined as an exercise (practice and repetition) in programming
-  - "Build & Sustain coding muscle for enterprise grade programming" 
-
-![coding](https://user-images.githubusercontent.com/82016952/159166901-32a16ead-46cd-4a06-ad9f-cf0d0723e181.gif)
-
+Daily katas using popular and widely used Java libraries (both native & third-party)
 
 Katas can be in the form of  
   - Programming Idioms
@@ -15,3 +9,9 @@ Katas can be in the form of
   - Just fun coding while exploring new things
 
 Inspiration: The importance of the kata is well explained in Clean Coder Books
+
+A kata, or code kata, is defined as an exercise (practice and repetition) in programming
+  - "Build & Sustain coding muscle for enterprise grade programming" 
+
+![coding](https://user-images.githubusercontent.com/82016952/159166901-32a16ead-46cd-4a06-ad9f-cf0d0723e181.gif)
+
