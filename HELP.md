@@ -9,4 +9,4 @@ Useful Libraries
 
 Miscellaneous
 * [Maven Scope](https://www.baeldung.com/maven-dependency-scopes)
-* 
+* [UUID](https://www.baeldung.com/java-uuid)
