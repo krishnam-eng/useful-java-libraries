@@ -2,6 +2,8 @@ package edu.clap.libraries.jnative.streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /*
 Streams APIs - "Declarative, Composable, Parallelizable"
@@ -23,11 +25,24 @@ public class WorkingWithStreams {
 
   // External Iteration - need for "garbage variable"
 
-  List<Dish> menu = getDishes();
+  public static void main(String[] args) {
+    List<Dish> menu = getDishes();
+    menu.stream()
+        .filter(Dish::isVegetarian)
+        .limit(3)
+        .collect(Collectors.toList())
+        .forEach(System.out::println);
 
-  public static void main(String[] args) {}
+    List<Integer> collect = menu.stream().map(Dish::getCalories).collect(Collectors.toList());
 
-  private List<Dish> getDishes() {
+    Map<Dish.Type, List<Dish>> grouped =
+        menu.stream().collect(Collectors.groupingBy(Dish::getType));
+    grouped.forEach((k, v) -> System.out.println("k = " + k + " v = " + v));
+
+    Map<Dish.Type, List<Dish>> df = menu.stream().collect(Collectors.groupingBy(Dish::getType));
+  }
+
+  private static List<Dish> getDishes() {
     return Arrays.asList(
         new Dish("pork", false, 800, Dish.Type.MEAT),
         new Dish("beef", false, 700, Dish.Type.MEAT),
