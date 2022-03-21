@@ -11,7 +11,38 @@ Katas can be in the form of
 Inspiration: The importance of the kata is well explained in Clean Coder Books
 
 A kata, or code kata, is defined as an exercise (practice and repetition) in programming
-  - "Build & Sustain coding muscle for enterprise grade programming" 
+
+- "Build & Sustain coding muscle for enterprise grade programming"
 
 ![coding](https://user-images.githubusercontent.com/82016952/159166901-32a16ead-46cd-4a06-ad9f-cf0d0723e181.gif)
 
+### Useful Java Libraries
+
+* lombok
+* model mapper
+* jmapper
+
+
+* resilience4j
+* shedlock
+
+
+* apache commons
+* google guava
+
+
+* gson
+* okhttp
+* retrofit
+* commons io
+
+
+* easymock
+* hamcrest
+* jspec
+* mockito
+* restassured
+
+
+* io micromeeter
+* logbook
