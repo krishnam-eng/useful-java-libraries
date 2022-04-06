@@ -1,4 +1,4 @@
-package edu.clap.libraries.ext.httpclient.retrofit;
+package edu.clap.libraries.ext.rest.retrofit;
 
 import com.google.gson.Gson;
 import com.google.gson.annotations.SerializedName;
